@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'pages/login_page.dart';
 import 'pages/home_page.dart';
 
@@ -27,9 +28,11 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         title: "FlutterEcommerce",
         themeMode: this.darkMode ? ThemeMode.dark : ThemeMode.light,
-        theme: ThemeData(primarySwatch: Colors.cyan),
+        theme: ThemeData(primarySwatch: Colors.cyan,
+        fontFamily: GoogleFonts.lato().fontFamily,
+        primaryTextTheme: GoogleFonts.latoTextTheme()),
         darkTheme: ThemeData(brightness: Brightness.dark),
-        initialRoute: '/home',
+        initialRoute: '/login',
         routes: {
           '/': (content) => HomePage(turnDarkMode),
           '/home': (content) => HomePage(turnDarkMode),
