@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/utils/routes.dart';
 
 class HomePage extends StatelessWidget {
   Function darkModeHandler;
@@ -23,7 +24,9 @@ class HomePage extends StatelessWidget {
         children: [
           ElevatedButton(
               onPressed: () => {darkModeHandler()}, child: Text("Dark Mode")),
-          TextButton(onPressed: null, child: Text("Login"))
+          TextButton(onPressed: ()=>{
+            Navigator.pushNamed(context, MyRoutes.loginRoute)
+          }, child: Text("Login"))
         ],
       )),
     );

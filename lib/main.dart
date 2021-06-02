@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'pages/login_page.dart';
 import 'pages/home_page.dart';
@@ -35,8 +36,8 @@ class _MyAppState extends State<MyApp> {
         initialRoute: '/login',
         routes: {
           '/': (content) => HomePage(turnDarkMode),
-          '/home': (content) => HomePage(turnDarkMode),
-          '/login': (context) => LoginPage(),
+          MyRoutes.homeRoute: (content) => HomePage(turnDarkMode),
+          MyRoutes.loginRoute: (context) => LoginPage(),
         });
   }
 }
