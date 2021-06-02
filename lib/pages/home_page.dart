@@ -22,6 +22,9 @@ class HomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          SizedBox(
+            height: 40,
+          ),
           ElevatedButton(
               onPressed: () => {darkModeHandler()}, child: Text("Dark Mode")),
           TextButton(onPressed: ()=>{
