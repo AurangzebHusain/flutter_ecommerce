@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/utils/routes.dart';
+import 'package:flutter_ecommerce/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   Function darkModeHandler;
@@ -17,21 +18,7 @@ class HomePage extends StatelessWidget {
           "Welcome to 30 Days of Dart",
         ),
       ]),
-      drawer: Drawer(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(
-            height: 40,
-          ),
-          ElevatedButton(
-              onPressed: () => {darkModeHandler()}, child: Text("Dark Mode")),
-          TextButton(onPressed: ()=>{
-            Navigator.pushNamed(context, MyRoutes.loginRoute)
-          }, child: Text("Login"))
-        ],
-      )),
+      drawer: MyDrawer(darkModeHandler),
     );
   }
 }
