@@ -7,7 +7,7 @@ class MyDrawer extends StatelessWidget {
   MyDrawer(@required this.darkModeHandler);
 
   final imgUrl =
-      "https://lh3.googleusercontent.com/LtTHAI-IjObYwWmR3J1wQQJuwfDteIaHmkEOs8W1wd-9Btvm7NDmWRO3UfZ6SZC7ojkjpLbarnHYWBGr4o09q0GLZZplpsj4uDtcXe3yTAQLsfvAKZ0YvyiWbJkhlzaFBGaTqF9bU8IH1fbrN5Hr2oNNgK-DXT3AambYDP86w7D1zN5Ys0FIXBXDmBceRB5QPF3wbAMhtw_Loy2_jUddvG-yUtXQDKJ4Y0IiAHsRb-Ni-k6H5RJNhp4dj9IsaQhjdSWEVrxsPUqXOdZv6VCZjqf20xgejC8IYIBaLyTdrqrDmMj6_j5zjpv5_dWsGB-qcSNxr7zey7A37c0xFnPzdbMO3R5R74906GsKUwH-fLVK7XBK-CUdMq8PN31ANRQ8TbJ3ui2j9y6NFUssd_ZrhM0MYn10vVhgJPwZrMDwLL_wjmGJ23__PqqsZ2LoHrvDLWkqUtEQ1umpZx41xtGKvoabw0o8oDpAeIZIqKkSGiUQmoyIGOc9ckce_xQODfRhLkV8JBbPRAjgY2O1nFzzgxUj5O4SCJXl1YGtFk77av8Fwy5jx5fQ1xAKGMF0OF9C9eYDGiuh3ZG7Wnpp55Zq02Zm42sXSyIV5SlHyobDkl10_Sl76QcX08PBenps5tPTf8dMYjmIIWVBnXgkMBLzDiNyXuHM1vEXzMf33moqOa2PpISY_gslbh9ro-0jr_sjwmDZ9gvliZK7ZWH38sol0Eux=w696-h927-no?authuser=0";
+      "https://lh3.googleusercontent.com/uopLSsPLxaZXZMGPIlJeJ_db_ci-R7PB6j5bLCyVsa2QmBK-e-pm3BXZYMwSSbTow8HiFM7Zkjv6UpgmVuHNeD-Ove_fAS-4SAhXFT6rg_6RpUyTOlg_HfgedMC1sEyGWwHRcPKXzGHgpmb5dIX_De-L6z5YWIWY0HbEW1hN8jIdS_cWIEGbnR9age-_R0IOG6wTDmAEXLWJ2_MGK2zno6bA8iDGNFos0bEIXeWn8QxkJw8mpQwKlFO93Kw9jX-RiKt6HqruDhcUjtkkMODIIp_JOhcS13PAGpJzoByKJ5Qyb-p8-jG8bXwcls7QEmkgiaC7595Bk4dfpTuIXunjxpMOtBBSqrWrXIxTDgbsp7r_ZgkUYulcSfdhRXwZQ6gy0BVxmf3ApTxn4tU-Hjs--MY7-obf4fxDNmwycooeFMa56z_n6l-03HJZffs08l8pgZXfb51HhNJVyHdtN7Xnx45ZW2JFor5U4bI4jw1m8baEjc1PTBBOjQ3pCN-5mspfwnubL0jXSfknDURKkdWhbr4wW2UvLrlv_cqeS4sQZe4wvDx7lgVpqXMOh9g4uTpFWr7Dm0a0krlgumegCqpkQyQMCY0HGut7ouuPJnMEbcC4vX2MV0wP9d_Uhxo1hs2j-FhMhP_ePiRQugg7Ybs82OiUwkqc6qd3olM794KZB5SxnuAekdaxr51sKFZSd-mVH0iLFC_cneAosu5mH0VLz03V=w660-h879-no?authuser=0";
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MyDrawer extends StatelessWidget {
             padding: EdgeInsets.zero,
             child: UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage(imgUrl),
+                backgroundImage: NetworkImage(imgUrl),
               ),
               accountName: Text("Sanam"),
               accountEmail: Text("sanam@gmail.com"),
