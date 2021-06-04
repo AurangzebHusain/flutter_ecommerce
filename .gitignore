@@ -46,4 +46,4 @@ app.*.map.json
 /android/app/release
 
 #//Data Related
-/lib/simlock-data.json
+/assets/files/simlock-data.json
