@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
         themeMode: this.darkMode ? ThemeMode.dark : ThemeMode.light,
         theme: MyTheme.lightTheme(context),
         darkTheme: MyTheme.darkTheme(context),
-        initialRoute: MyRoutes.homeRoute,
+        initialRoute: MyRoutes.loginRoute,
         routes: {
           '/': (content) => HomePage(turnDarkMode),
           MyRoutes.homeRoute: (content) => HomePage(turnDarkMode),
